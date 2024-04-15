@@ -1,12 +1,11 @@
 package com.teachmeskills.lesson23.runner;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
-
-import static com.teachmeskills.lesson23.parser.DomParser.parser;
+import static com.teachmeskills.lesson23.parser.DomParser.parserDom;
+import static com.teachmeskills.lesson23.parser.SaxParser.parserSax;
 
 public class Runner {
-    public static void main(String[] args) throws Exception {
-        parser();
+    public static void main(String[] args){
+        parserDom();
+        parserSax();
     }
 }

@@ -12,7 +12,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class DomParser {
-    public static void parser() {
+    public static void parserDom() {
 
         String domParserTitle = "resource/";//TODO constants
 
@@ -41,7 +41,7 @@ public class DomParser {
                     break;
                 }
                 case "title": {
-                    domParserTitle += "_" + rootChildren.item(i).getTextContent() + ".txt";
+                    domParserTitle += "_" + rootChildren.item(i).getTextContent() + "_Dom.txt";
                     break;
                 }
                 case "lines": {
